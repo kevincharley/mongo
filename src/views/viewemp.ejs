@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=form, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr><th>eid</th>
+            <th>ename</th>
+        <th>sal</th></tr>
+       <% for(var i=0;i<emps.length;i++){%>
+        <tr><td>
+            <%= emps[i].eid%>
+     </td><td>
+            <%= emps[i].name%>
+     </td>
+     <td>
+            <%= emps[i].salary%>
+     </td>
+    </tr>
+    <%}%>
+        </thead>
+    </table>
+</body>
+</html>
